@@ -6,6 +6,7 @@
 
 // actions - objects that describe to the reducer what event has occured and how it should update the state
 
+  
 export const ADD_FEATURE = "ADD_FEATURE";
 export const REMOVE_FEATURE = "REMOVE_FEATURE";
 
@@ -15,6 +16,6 @@ export const addFeature = item => {
 };
 
 export const removeFeature = item => {
-  return { };
+  return { type: REMOVE_FEATURE, payload: item };
 };
 
